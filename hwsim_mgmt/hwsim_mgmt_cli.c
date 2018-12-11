@@ -187,7 +187,7 @@ void notify_device_deletion() {
 
 void notify_device_setRSSI() {
     if (ctx.args.mode == HWSIM_OP_SET_RSSI) {
-        printf("new SSID defined to interface %d\n", ctx.args.rssi_radio);
+        printf("new RSSI defined to interface %d\n", ctx.args.rssi_radio);
     }
     exit(EXIT_SUCCESS);
 }
