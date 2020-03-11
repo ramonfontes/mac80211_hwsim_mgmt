@@ -72,7 +72,7 @@ error_t hwsim_parse_argp(int key, char *arg, struct argp_state *state) {
             if (arguments->mode != HWSIM_OP_NONE) {
                 argp_err_and_usage(msg_duplicate_mode);
             }
-            arguments->rssi_radio = cli_get_uint32('d', arg);
+            arguments->rssi_radio = cli_get_uint32('k', arg);
             arguments->mode = HWSIM_OP_SET_RSSI;
             break;
         case 'c':
